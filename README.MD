@@ -1,1 +1,1 @@
-## 参考 VuePress 和 (vuepress-theme-vdoing)[https://xugaoyi.github.io/vuepress-theme-vdoing-doc] 而来
+参考 [vuepress-theme-vdoing](https://github.com/xugaoyi/vuepress-theme-vdoing) 搭建而成，感谢作者的付出！

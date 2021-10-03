@@ -10,6 +10,15 @@ module.exports = [
     link: '/javaBase/'
   },
   {
+    text: '工具',
+    items: [
+      {
+        text: 'Git',
+        link: '/pages/ee8dbb/',
+      }
+    ]
+  },
+  {
     text: '常见中间件',
     link:'/popularMedContains',
     items: [

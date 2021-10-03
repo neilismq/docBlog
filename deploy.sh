@@ -3,10 +3,12 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-git add .
-git commit -m fix
-git push 
+# git add .
+# git commit -m fix
+# git push 
 
+# yarn or npm install
+yarn 
 # 生成静态文件
 yarn run build
 

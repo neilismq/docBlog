@@ -6,7 +6,7 @@ module.exports = [
     'meta',
     {
       name: 'keywords',
-      content: '博客,个人技术博客,neilism,Java,markdown',
+      content: '博客,个人技术博客,neilismq,Java,markdown',
     },
   ],
   ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证

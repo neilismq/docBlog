@@ -14,7 +14,11 @@ module.exports = [
     items: [
       {
         text: 'Git',
-        link: '/pages/ee8dbb/',
+        link: '/pages/ee8db5/',
+      },
+      {
+        text: '快捷键',
+        link: '/pages/558cc9/',
       }
     ]
   },

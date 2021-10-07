@@ -33,6 +33,15 @@ module.exports = [
     ]
   },
   {
+    text: '操作系统',
+    items: [
+      {
+        text: 'Linux',
+        link: '/linux/',
+      }
+    ]
+  },
+  {
     text: '分类',
     link: '/categories/'
   },

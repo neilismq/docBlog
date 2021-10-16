@@ -13,6 +13,10 @@ module.exports = [
     text: '工具',
     items: [
       {
+        text: 'Docker',
+        link: '/pages/e933bd/',
+      },
+      {
         text: 'Git',
         link: '/pages/ee8db5/',
       },
@@ -29,6 +33,10 @@ module.exports = [
       {
         text: 'Redis',
         link: '/pages/ee8dbb/',
+      },
+      {
+        text: 'ElasticSearch',
+        link: '/pages/fd768a/',
       }
     ]
   },

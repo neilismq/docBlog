@@ -45,7 +45,7 @@ module.exports = [
     items: [
       {
         text: 'Linux',
-        link: '/linux/',
+        link: '/pages/a8a502/',
       }
     ]
   },
@@ -54,7 +54,7 @@ module.exports = [
     items: [
       {
         text: '好东西',
-        link: '/pages/fc0ebc',
+        link: '/pages/fc0ebc/',
       }
     ]
   },

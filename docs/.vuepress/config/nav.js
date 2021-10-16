@@ -50,6 +50,15 @@ module.exports = [
     ]
   },
   {
+    text: '其他',
+    items: [
+      {
+        text: '好东西',
+        link: '/pages/fc0ebc',
+      }
+    ]
+  },
+  {
     text: '分类',
     link: '/categories/'
   },

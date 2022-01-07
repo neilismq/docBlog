@@ -23,6 +23,10 @@ module.exports = [
       {
         text: '快捷键',
         link: '/pages/558cc9/',
+      },
+      {
+        text: 'GraphQL',
+        link: '/pages/83084a/'
       }
     ]
   },

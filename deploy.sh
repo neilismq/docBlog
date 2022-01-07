@@ -9,6 +9,7 @@ set -e
 
 # yarn or npm install
 yarn 
+rm -rf docs/.vuepress/dist
 # 生成静态文件
 yarn run build
 
@@ -40,4 +41,4 @@ git push -f $githubUrl master:master # 推送到github gh-pages分支
 # git push -f $codingUrl master # 推送到coding
 
 cd -
-rm -rf docs/.vuepress/dist
+# rm -rf docs/.vuepress/dist

@@ -13,12 +13,20 @@ module.exports = [
     text: '工具',
     items: [
       {
+        text: 'Docker',
+        link: '/pages/e933bd/',
+      },
+      {
         text: 'Git',
         link: '/pages/ee8db5/',
       },
       {
         text: '快捷键',
         link: '/pages/558cc9/',
+      },
+      {
+        text: 'GraphQL',
+        link: '/pages/83084a/'
       }
     ]
   },
@@ -29,6 +37,10 @@ module.exports = [
       {
         text: 'Redis',
         link: '/pages/ee8dbb/',
+      },
+      {
+        text: 'ElasticSearch',
+        link: '/pages/fd768a/',
       }
     ]
   },
@@ -37,7 +49,16 @@ module.exports = [
     items: [
       {
         text: 'Linux',
-        link: '/linux/',
+        link: '/pages/a8a502/',
+      }
+    ]
+  },
+  {
+    text: '其他',
+    items: [
+      {
+        text: '好东西',
+        link: '/pages/fc0ebc/',
       }
     ]
   },

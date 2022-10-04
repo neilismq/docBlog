@@ -1,0 +1,50 @@
+        if(businessIdentity.getTenantId())
+        
+        /**中医调剂师屏蔽类目**/
+        chineseMedicinePharmacistHiddenCategoryList = NewList(21920L, 21922L);
+
+        /**其他非医职业需屏蔽的类目**/
+        otherNonMedicalProfessionHiddenCategoryList = new ArrayList();
+        otherNonMedicalProfessionHiddenCategoryList.add(27165L);
+        for (i = 0; i < chineseMedicinePharmacistHiddenCategoryList.size(); i++) {
+            otherNonMedicalProfessionHiddenCategoryList.add(chineseMedicinePharmacistHiddenCategoryList.get(i));
+        }
+
+        /**中医调剂师**/
+        chineseMedicinePharmacistProfession = 8;
+
+        /**药师**/
+        pharmacistProfession = 3;
+
+        /**医生**/
+        doctorProfession = 1;
+
+        result = new ArrayList();
+
+        /**医生或药师全量返回**/
+        if (doctorBaseInfo.getProfessionType() == doctorProfession || doctorBaseInfo.getProfessionType() == pharmacistProfession ){
+            result = new ArrayList(originCategoryIds);
+        }else{
+
+            /**中医调剂师屏蔽**/
+            if (doctorBaseInfo.getProfessionType() == chineseMedicinePharmacistProfession){
+                 for (int i = 0; i <originCategoryIds.size() ; i++) {
+                    categoryId = originCategoryIds.get(i);
+                    if (!chineseMedicinePharmacistHiddenCategoryList.contains(categoryId)){
+                        result.add(categoryId);
+                    }
+                }
+
+            }else {
+
+                /**其他非医屏蔽**/
+                for (int i = 0; i <originCategoryIds.size() ; i++) {
+                    categoryId = originCategoryIds.get(i);
+                    if (!otherNonMedicalProfessionHiddenCategoryList.contains(categoryId)){
+                        result.add(categoryId);
+                    }
+                }
+            }
+        }
+
+        return result;

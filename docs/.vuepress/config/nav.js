@@ -6,6 +6,10 @@ module.exports = [
     link: '/workLog/'
   },
   {
+    text: '业务',
+    link: '/companyBusiness/'
+  },
+  {
     text: 'Java基础',
     link: '/javaBase/'
   },

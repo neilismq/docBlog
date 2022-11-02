@@ -24,12 +24,7 @@ module.exports = [
   },
   {
     text: '其他',
-    items: [
-      {
-        text: '好东西',
-        link: '/pages/51a0a0/',
-      }
-    ]
+    link: '/pages/51a0a0/'
   },
   {
     text: '归档',

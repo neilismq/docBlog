@@ -19,4 +19,9 @@ module.exports = [
       src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
     },
   ], // 网站关联Google AdSense 与 html格式广告支持
+  [
+    'script',
+    {},
+    "var _hmt = _hmt || [];(function() {var hm = document.createElement(\"script\");hm.src = \"https://hm.baidu.com/hm.js?a671ceacce603249c64801c7f9ca627a\";var s = document.getElementsByTagName(\"script\")[0]; s.parentNode.insertBefore(hm, s);})();"
+  ]
 ]

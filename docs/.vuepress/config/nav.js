@@ -7,24 +7,11 @@ module.exports = [
   },
   {
     text: '常用工具',
-    items: [
-      {
-        text: 'Git',
-        link: '/pages/ee8db5/',
-      },
-      {
-        text: '快捷键',
-        link: '/pages/558cc9/',
-      },
-      {
-        text: 'GraphQL',
-        link: '/pages/83084a/'
-      }
-    ]
+    link: '/pages/ee8db5/'
   },
   {
-    text: '其他',
-    link: '/pages/51a0a0/'
+    text: '感悟',
+    link: '/pages/a3a2c7/'
   },
   {
     text: '归档',

@@ -82,23 +82,33 @@ module.exports = [
   ],
   [
     'vuepress-plugin-comment', // 评论
+    // {
+    //   choosen: 'gitalk',
+    //   options: {
+    //     clientID: '4b20eb2c9235e49cdb79',
+    //     clientSecret: 'f821f1452b4a7b7738f81e924e8e47f071687938',
+    //     repo: 'docBlog', // GitHub 仓库
+    //     owner: 'neilismq', // GitHub仓库所有者
+    //     admin: ['neilismq'], // 对仓库有写权限的人
+    //     // distractionFreeMode: true,
+    //     pagerDirection: 'last', // 'first'正序 | 'last'倒序
+    //     id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+    //     title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+    //     labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
+    //     body:
+    //       '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+    //   },
+    // },
     {
-      choosen: 'gitalk',
+      choosen: 'valine', 
+      // options选项中的所有参数，会传给Valine的配置
       options: {
-        clientID: '4b20eb2c9235e49cdb79',
-        clientSecret: 'f821f1452b4a7b7738f81e924e8e47f071687938',
-        repo: 'docBlog', // GitHub 仓库
-        owner: 'neilismq', // GitHub仓库所有者
-        admin: ['neilismq'], // 对仓库有写权限的人
-        // distractionFreeMode: true,
-        pagerDirection: 'last', // 'first'正序 | 'last'倒序
-        id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-        title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-        labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-        body:
-          '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-      },
-    },
+        el: '#valine-vuepress-comment',
+        appId: 'mZQX4Zz5qIxTly16vGswhGbU-gzGzoHsz',
+        appKey: 'xLUkBp8RBhbFaFM4RLaQDssz',
+        path: '<%- frontmatter.commentid || frontmatter.permalink %>'
+      }
+    }
   ],
   [
     '@vuepress/last-updated', // "上次更新"时间格式
